@@ -29,7 +29,6 @@ export default function App(props: AppProps) {
         setState({
             isLoaded: false,
             isLoggedIn: false,
-            sessionExpired: false,
         });
     }
 
@@ -54,7 +53,6 @@ export default function App(props: AppProps) {
             return {
                 ...prevState,
                 isLoggedIn: true,
-                sessionExpired: false,
             };
         });
     }
@@ -66,7 +64,6 @@ export default function App(props: AppProps) {
             return {
                 ...prevState,
                 isLoggedIn: false,
-                sessionExpired: true,
             };
         });
     }
